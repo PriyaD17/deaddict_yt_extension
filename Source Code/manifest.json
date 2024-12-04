@@ -25,9 +25,7 @@
       "run_at": "document_start"
     }
   ],
-  "background": {
-    "service_worker": "background.js"
-  },
+  
   "declarative_net_request": {
     "rule_resources": [
       {

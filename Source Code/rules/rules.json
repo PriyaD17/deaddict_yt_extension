@@ -10,7 +10,8 @@
       },
       "condition": {
         "urlFilter": "*://www.youtube.com/watch*",
-        "resourceTypes": ["main_frame"]
+        "resourceTypes": ["main_frame"],
+        "run_at": "document_start"
       }
     },
     {
@@ -24,7 +25,8 @@
       },
       "condition": {
         "urlFilter": "*://www.youtube.com/shorts*",
-        "resourceTypes": ["main_frame"]
+        "resourceTypes": ["main_frame"],
+        "run_at": "document_start"
       }
     }
   ]
