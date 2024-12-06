@@ -2,10 +2,8 @@
   "manifest_version": 3,
   "name": "BreakLoop",
   "description": "Replace YouTube videos with random boring ones.",
-  "version": "1.0",
-  "permissions": [
-    "declarativeNetRequest"
-  ],
+  "version": "1.1",
+  "permissions": [],
   "host_permissions": [
     "*://*.youtube.com/*"
   ],
@@ -18,21 +16,10 @@
   "content_scripts": [
     {
       "matches": [
-        "*://www.youtube.com/watch*",
-        "*://www.youtube.com/shorts*"
+        "*://www.youtube.com/watch*"
       ],
       "js": ["content.js"],
       "run_at": "document_start"
     }
-  ],
-  
-  "declarative_net_request": {
-    "rule_resources": [
-      {
-        "id": "1",
-        "enabled": true,
-        "path": "rules/rules.json"
-      }
-    ]
-  }
+  ]
 }
